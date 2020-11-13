@@ -173,6 +173,8 @@ Error message and password prompt
 
 <li>$:/state/sidebar</li>
 
+<li>$:/state/tab--1498284803</li>
+
 <li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab-1749438307</li>
@@ -184,6 +186,8 @@ Error message and password prompt
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/temp/advancedsearch</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -470,6 +474,8 @@ Error message and password prompt
 <li>Lizardmen Skill Selection</li>
 
 <li>Loner</li>
+
+<li>Macros</li>
 
 <li>Mighty Blow</li>
 
@@ -10394,6 +10400,9 @@ Error message and password prompt
 <div created="20201111205148089" modified="20201111205205743" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
+<div created="20201113133539497" modified="20201113133555958" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+</div>
 <div created="20201111200731257" modified="20201111204248177" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
@@ -10411,6 +10420,9 @@ Error message and password prompt
 </div>
 <div list="Teams" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20201113133528343" modified="20201113133528343" title="$:/temp/advancedsearch">
+<pre>$:/core/ui/PageMacros</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -10470,7 +10482,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201111185554091" modified="20201113092305217" title="$:/temp/search">
+<div created="20201111185554091" modified="20201113133528343" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
@@ -10962,14 +10974,16 @@ The player may use his Strength instead of his Agility when making a [[Dodge rol
 
 [[Lineups|Bretonnian Lineups]], [[Skill selection|Bretonnian Skill Selection]] from http://fumbbl.com</pre>
 </div>
-<div changecount="41" created="20160117122200000" creator="Bloodbowl" modified="20160201173800000" modifier="Bloodbowl" title="Cage Basics" type="text/x-tiddlywiki">
+<div changecount="41" created="20160117122200000" creator="Bloodbowl" modified="20201113133257063" modifier="Bloodbowl" title="Cage Basics" type="text/vnd.tiddlywiki">
 <pre>[[by bbtactics.com|http://bbtactics.com/cage-basics/]]
 
 !!!Overview:
 If you are fairly new to Blood Bowl you may see the term “cage” used a lot in tactics terminology. At a basic level a Blood Bowl cage is protective formation used by the offensive team to protect their player who is carrying the ball. There are slight variations on what a cage looks like but I’m going to cover here the most standard and typically used version. By the end of this you should have a better idea on not only what a cage is, but why you should be using them and the strengths they have. It is a staple tactics used by pretty much every team in the game and is something you will need to get to grips with. Not doing so will not only hurt your chances on offence but not knowing how and why they work will also hinder your chances of stopping them when defending as well. 
 !!!A Basic Blood Bowl Cage:
 The diagram shows a match between an Elf side on defence (in yellow) against a Dwarf team on offence (in blue). The Dwarfs have formed a basic cage around their ball carrier and the Elves are in place to defend against it advancing. As you can see a basic cage looks very much like the “5” on a standard six sided die, the ball carrier sat in the middle and four team mates one at each diagonal corner from him. Cages are quite a complex part of Blood Bowl and I’m just going to deal with the basic cage in this article. If I covered advancing a cage, preventing a cage, stalling a cage and how to deal with everything that flows from those subjects this would get rather long. Those subjects I’ll cover separately as they will start getting into more advanced situations.
-[img[Breaking a cage|http://i.nahraj.to/f/1jBg.jpg][zCage]]              /%[img[Breaking a cage|http://i.nahraj.to/f/1jBg.jpg][http://i.nahraj.to/f/1jBh.jpg]]%/
+
+[img[Breaking a cage|http://i.nahraj.to/f/1jBg.jpg]]
+
 !!!The Anatomy of a Cage: 
 I covered what a cage looks like above, so you now know what a cage actually is, but now I’ll explain why they are so commonly used and effective. The reason you are using a cage is to protect your ball carrier, you can probably see by looking at the diagram that there is no way for the opposing team to just run up and hit the player with the ball. If they can’t easily hit the ball carrier then they can’t easily get the ball off him. The opposing team instead will either just have to try and stop him getting into the end zone to score, try and force the ball carrier out of the cage next turn, or hope that the other team loses possession during their own turn.
 
@@ -13429,6 +13443,13 @@ If +MA: [[Sprint]] (then [[Sure Feet]]) preferred as normal skills</pre>
 <pre>''Loner'' (Extraordinary)
 Loners, through inexperience, arrogance, animal ferocity or just plain stupidity, do not work well with the rest of the team. As a result, a Loner may use team [[re-rolls|Re-rolls]] but has to roll a D6 first. On a roll of 4+, he may use the team [[re-roll|Re-rolls]] as normal. On a roll of 1-3 the original result stands without being re-rolled but the team re-roll is lost (i.e., used).</pre>
 </div>
+<div created="20201113133646983" modified="20201113134056596" tags="$:/tags/Macro" title="Macros">
+<pre>\define red(text)
+@@color:red;
+$text$
+@@
+\end</pre>
+</div>
 <div changecount="10" created="20151225233700000" creator="Bloodbowl" modified="20201111193801047" modifier="Bloodbowl" tags="tagStrength" title="Mighty Blow" type="text/vnd.tiddlywiki">
 <pre>''Mighty Blow'' (Strength)
 Add 1 to any [[Armour|Armour roll]] or [[Injury|Injury table]] roll made by a player with this skill when an opponent is [[Knocked Down|Knock Down]] by this player during a [[block|Block Action]]. Note that you only modify one of the dice rolls, so if you decide to use Mighty Blow to modify the [[Armour roll]], you may not modify the [[Injury|Injury table]] roll as well. Mighty Blow cannot be used with the [[Stab]] or [[Chainsaw]] skills.</pre>
@@ -14337,44 +14358,47 @@ Note that no [[Armour roll]] is made for a player that is pushed off the pitch, 
 
 [img[Slow-motion replay|http://i.nahraj.to/f/1hDz.png]]</pre>
 </div>
-<div changecount="36" created="20160118122800000" creator="Bloodbowl" modified="20160201173800000" modifier="Bloodbowl" title="Races Described" type="text/x-tiddlywiki">
-<pre>[[by bloodbowl-game.com|http://forum.bloodbowl-game.com/viewtopic.php?f=6&amp;t=318]]
+<div changecount="36" created="20160118122800000" creator="Bloodbowl" modified="20201113134113969" modifier="Bloodbowl" title="Races Described" type="text/vnd.tiddlywiki">
+<pre>[[by bloodbowl-game.com|http://forum.bloodbowl-game.com/viewtopic.php?f=6&amp;t=318]]&lt;br&gt;
+
 !!Welcome fellow Blood Bowlers!
 
 This post is intended for players new to the game and aims to give a brief overview of what to expect when picking different teams. First I will present the two main factors governing a teams potential, followed by a brief description of the races' individual play styles and finishing with some general tips and links to detailed race descriptions. There are two main aspects which decide how a team acts on the field, the first is the manner in which they prefer to handle the ball and the second how resistant they are to taking damage. On demand a 3rd aspect of team abilities has been added, Team Mobility and Strength.
 
 !!!Ball handling
+
 There are two extremes for handling the ball, a running game or a passing game. For running teams the strategy is to let one player run with the ball from your own side to the touchdown zone, passing is seen as an unneeded risk. Passing teams on the other hand prefer to move the ball more quickly to the touchdown zone by using either high agility (elves) or specialized players (throwers and catchers) to throw or handoff the ball between players while running.
 When learning the game it can be recommended to play a team using the less risky running game so you can focus on Blocking, Assists and defending your ball-holder. Below is a rough ranking of which play style the teams prefer, It shows how much better the teams passing game is compared to their running game.
 
 ''*Passing*'' //High Elves &gt; (Pro) Elves &gt; Wood Elves &gt; Skaven &gt; Human &gt; Dark Elves &gt; Amazon &gt; Norse &gt; Orc &gt; Vampire &gt; Chaos &gt; Nurgle &gt; Necromantic &gt; Undead &gt; Hafling &gt; Goblin &gt; Lizardman &gt; Ogre &gt; Dwarf &gt; Khemri// ''*Running*''
 
 !!!Damage resistance
+
 The common term used is how ‘bashy’ a team is, which insinuates how much damage they can cause. However, it is more important to know how well your own team can take a beating! Even Elves can and should smash their opponents into the ground if given the chance. ''The damage resistance of a team is how likely you are to lose players when everything goes wrong and the opponent gets a chance to hurt your team.'' Your players’ Armour Value (AV) govern how damage resistant the team is (Goblins and Skinks take extra damage due to the Stunty ability). A high armour team can be seen as more forgiving and allows a coach to risk players taking damage in order to make life difficult for the opponent. When learning the game it can be recommended to play a team with a high Armour Value, such as Orcs or Dwarves, to avoid losing players early in the match when (not if) something goes wrong.  ;) 
 
-''*Damage resistance*''
+''*Damage resistance*'' &lt;br&gt;
 //Orc &gt; Dwarf &gt; Nurgle &gt; Chaos &gt; Undead &gt; Necromantic &gt; Dark Elves &gt; Khemri &gt; High Elves &gt; Human &gt; Lizardman &gt; Norse &gt; Amazon &gt; Vampire &gt; Skaven &gt; (Pro) Elves &gt; Wood Elves &gt; Ogre &gt; Goblin &gt; Hafling//
 
 ''Advice to coaches who think they can win games by only hurting their opponents:''
 In most cases it is your opponent who decides how many chances you get to hurt them the next turn, so if you want to do damage then you need to force the opponent into placing their players close to yours. Threatening their ball-holder and making it hard for them to control the ball is a great start. In short, focusing too much on doing damage and ignoring the ball will most often result in fewer opportunities to do damage!
 
-!!!Team Mobility and Strength
+!!!Team Mobility and Strength&lt;br&gt;
 Mobility is the ability of a player/team to move and Dodge to get into position, it should not to be confused with high Movement (MA). For example a Wood Elf Catcher has much higher mobility than a Human Catcher because of the extra Agility (AG) making Dodges easier and to a much lesser extent due to the extra Movement! ''Average Strength'' (ST) governs how well the team can stand toe-to-toe with the bulk of the opponents team without getting pressed back. ''Team Mobility'' governs how easily the players can move to new positions to ''assist, move the ball or limit the opponents options with tackle zones.'' @@color(grey):It should be noted that most of the 9 teams of BB1 are quite mobile when compared to the other 11 existing Blood Bowl teams implemented in LE. Even Orcs who are 2nd last are actually ok when it comes to mobility and only the Dwarves really suffer in this department.@@
 
 For a new player it is easy to mistake a high mobility team for a team &quot;running away from the fight&quot;, indicating weakness. Instead they are rearranging and ''running to the important fights''. __All blocks are not equally important__, a mobile teams can position themselves for ''maximum support where it matters and disengage where it does not''. Playing a highly mobile team and never dodging is a huge waste of potential, so if your Elves or Skavens are constantly fighting the opponents head on, instead of using their mobility, then you would have been better off picking Orcs or Dwarves!
 
 In the same way, Strength teams need to pick their battles wisely and consider the consequences of going into melee, since ''players will most likely not be able/willing to disengage for a few turns''. The best way for a Strength team to not suffer from their lack of mobility is to &quot;simply&quot; ''create a situation where the important blocks are where they have a lot of players''. The classic boxing of a ball holder is one example. The importance of forcing the opponent to fight where you are goes hand in hand with my advice ending the Damage Resistance section, seen above.
 
-''*Mobility*''
+''*Mobility*''&lt;br&gt;
 Wood Elves &gt; (Pro) Elves &gt; High Elves &gt; Dark Elves &gt; Lizardman* &gt; Skaven &gt; Vampire &gt; Goblin &gt; Human &gt; Amazon &gt; Norse &gt; Chaos &gt; Hafling &gt; Ogre &gt; Nurgle &gt; Orc &gt; Necromantic &gt; Undead &gt; Dwarf &gt; Khemri 
 
-''*Strength*''
+''*Strength*''&lt;br&gt;
 Khemri 41 &gt; Orcs, Chaos, Nurgle, Vampire 39 &gt; Lizardmen*, Dwarves, Norse, Undead 37 &gt; Ogre, Necromantic 35 &gt; Amazon, Dark Elves, (Pro) Elves, High Elves 33 &gt; Wood Elves, Skaven, Humans 31 &gt; Hafling 30 &gt; Goblins 28
 
 The number in parenthesis is the sum of the teams Strength when fielding 11 players, including all positionals. Due to a slightly difference in Big Guys the team Strength can be a bit missleading, so even thought the totals differ between Skaven, Humans and Wood Elves they can be considered equally strong.
 ''*''Lizardmen are an anomaly here since they have two types of players, all of them fast but with strong/un-agile Sauruses and weak/agile Skinks. It is hard to place them on any sort of scale, the team as a whole is very fast, but without skills (Break Tackle) a Saurus can easily get stuck in melee.
 
-!!!Races Described
+!!!Races Described&lt;br&gt;
 Below follows a brief description of what to expect when starting the different teams, once you find a team you think would suit you then read the corresponding thread with detailed race information linked in the end of this post. ''But first a few words about Big Guys'', a player-type which several teams can use. Big Guys or Loners are larger/stronger and extra expensive players which at first glance seem very good to use, but be warned, they can’t always be trusted. The fact that they often fail basic actions due to ''Negative Traits'' and can’t use rerolls like normal players can make them more harm than good when learning the game. ''Star Players'' are famous Blood Bowl legends that can be hired to play for your team during one match, note that stars have the Loner drawback since they aren't used to playing in your team. Some stars are race specific while others play for almost anyone, the superstar Ogre ''Morg'n'Thorg'' will join any team except Undead, Khemri and Necromatic!
 
 Legendary Edition offers a total of 20 teams which can make choosing a good team hard for new players wanting to learning the rules. 
@@ -14384,28 +14408,28 @@ If you are new to Blood Bowl my advice it to take an extra look at the following
 ''@@Standard Teams@@'' – The first four teams have slightly different strengths and are all ''good for learning the game!''
 
 ''@@color(red):Dwarves:@@''
-Dwarves play the definition of running game and will seldom pass the ball once it is in the safe hands of a Runner. Their high armour and Thick Skulls combined with the Block ability on many players makes taking punches a minor problem. They would seem to be the perfect team for new players at first glance; however, ''their low mobility is an unforgiving weakness!'' A mistake when your team is clumped up can allow the opponent to run past the Dwarves, after which you might never have a chance to catch up.
-''Star Player'' - Grimm Ironjaw, an extra stong and extra angry Dwarf Slayer! (Zara the Slayer added in LE)
+Dwarves play the definition of running game and will seldom pass the ball once it is in the safe hands of a Runner. Their high armour and Thick Skulls combined with the Block ability on many players makes taking punches a minor problem. They would seem to be the perfect team for new players at first glance; however, ''their low mobility is an unforgiving weakness!'' A mistake when your team is clumped up can allow the opponent to run past the Dwarves, after which you might never have a chance to catch up.&lt;br&gt;
+''Star Player'' - Grimm Ironjaw, an extra stong and extra angry Dwarf Slayer! (Zara the Slayer added in LE)&lt;br&gt;
 //Advice – Resist the urge to move all players together and fight in a pile; spread players out to deny your opponent the ability to run around you freely.//
 
-''@@color(red):Orcs:@@''
-Good at most things, excellent at nothing and really hard to kill. Orcs are the perfect team to start out with since they have a bit of everything, even a Big Guy Troll and Goblins it can eat! Their Throwers allow them to both play a running game and do the odd Pass, however, there are no dedicated catchers to receive the Pass. Four mobile Blitzers and ''four extra strong but slow Blockers give Orcs that extra punch when compared to the other Standard Teams.''
-''Star Player'' - Varag Ghoul-Chewer, an extra strong and skilled Orc Blitzer! (Scrappa Sorehead and Ripper added in LE)
+''@@color:red;Orcs@@''
+Good at most things, excellent at nothing and really hard to kill. Orcs are the perfect team to start out with since they have a bit of everything, even a Big Guy Troll and Goblins it can eat! Their Throwers allow them to both play a running game and do the odd Pass, however, there are no dedicated catchers to receive the Pass. Four mobile Blitzers and ''four extra strong but slow Blockers give Orcs that extra punch when compared to the other Standard Teams.''&lt;br&gt;
+''Star Player'' - Varag Ghoul-Chewer, an extra strong and skilled Orc Blitzer! (Scrappa Sorehead and Ripper added in LE)&lt;br&gt;
 //Advice – Skip the Troll and the Goblins until you learn to fully utilize the other 4 types of players, enjoy!//
 
 ''@@color(red):Wood Elves (WE):@@''
-Nothing beats the Wood Elves when it comes to ball handling, movement and agility. Their high base agility and specialized players makes it very hard for opponents to stop them from scoring in two turns when holding the ball. However, their skill at the passing game does not help them as much when the opponent has the ball... ''The Wood Elves weakness is low armour and expensive players'', which can make it an uphill battle to field 11 players each drive the first matches if &quot;unlucky&quot;. Their Big Guy, the Treeman, is a good pick since it lowers the amount of damage taken at the line of skirmish after scoring goals.
-''Star Player'' - Jordell Freshbreeze, an extremely agile and mobile Wardancer! (Eldril Sidewinder added in LE)
+Nothing beats the Wood Elves when it comes to ball handling, movement and agility. Their high base agility and specialized players makes it very hard for opponents to stop them from scoring in two turns when holding the ball. However, their skill at the passing game does not help them as much when the opponent has the ball... ''The Wood Elves weakness is low armour and expensive players'', which can make it an uphill battle to field 11 players each drive the first matches if &quot;unlucky&quot;. Their Big Guy, the Treeman, is a good pick since it lowers the amount of damage taken at the line of skirmish after scoring goals.&lt;br&gt;
+''Star Player'' - Jordell Freshbreeze, an extremely agile and mobile Wardancer! (Eldril Sidewinder added in LE)&lt;br&gt;
 //Advice – Spread to cover zones and don’t let opponents fully surround your players, if trapped they can't use their agility to dodge away and lose the benefit of having a high mobility. (If you just stand and fight, you might as well have picked Orcs) Rerolls are your friend since rolling 1 will happen, a lot. On defence Wardancers with Strip Ball can be used very aggressively to steal the ball and score!//
 
 ''@@color(red):Humans:@@''
-Humans are pretty good at most things but less suited for fighting than Orcs. The main difference between Orc and ''Human is that Humans have 1 more in Movement and 1 less in Armour.'' The other difference is that Humans have four weak Catchers with high Movement instead of the Orcs' strong Blockers with low Movement.
-''Star Player'' - Griff Oberwald, the best Human Blitzer in history, both strong and agile with a number of skills! (Zara the Slayer added in LE)
+Humans are pretty good at most things but less suited for fighting than Orcs. The main difference between Orc and ''Human is that Humans have 1 more in Movement and 1 less in Armour.'' The other difference is that Humans have four weak Catchers with high Movement instead of the Orcs' strong Blockers with low Movement.&lt;br&gt;
+''Star Player'' - Griff Oberwald, the best Human Blitzer in history, both strong and agile with a number of skills! (Zara the Slayer added in LE)&lt;br&gt;
 //Advice – Humans greatest strength is their flexibility, adapt to your opponents weaknesses. Be brave when you have to do the super-human and a coward when you can manage without taking risks. If you test Humans and feel they lack agility then go Wood Elf, if you think they lack strength then go Orc and if you suffer lots of turnovers when blocking then go Dwarves!//
 
 ''@@color(red):Dark Elves (DE):@@''
-One word: ''Superior!'' Since they are better than everyone else they do not need a Big Guy or Secret Weapons. The team is filled with AG4, ST3, +6MA and predominantly AV8 players, all have General and Agility access. Dark Elves can hold their ground when needed, regroup for devastating pin-point attacks or humiliate the opponent by crowd-surfing their players. They have the potential to make real Jack of all Traits teams, something low AG effectively stops Humans from managing. Runners with Dump Off and Assassins with Stab give new flavour to the already popular black leather elves!
-''Star Player'' - Harkon Heartripper, stabber extraordinaire! (Eldril Sidewinder added in LE)
+One word: ''Superior!'' Since they are better than everyone else they do not need a Big Guy or Secret Weapons. The team is filled with AG4, ST3, +6MA and predominantly AV8 players, all have General and Agility access. Dark Elves can hold their ground when needed, regroup for devastating pin-point attacks or humiliate the opponent by crowd-surfing their players. They have the potential to make real Jack of all Traits teams, something low AG effectively stops Humans from managing. Runners with Dump Off and Assassins with Stab give new flavour to the already popular black leather elves!&lt;br&gt;
+''Star Player'' - Harkon Heartripper, stabber extraordinaire! (Eldril Sidewinder added in LE)&lt;br&gt;
 //Advice – Darkies are perhaps not an ideal first team since they lack the pre-defined roles of the other standard teams. However, once you grasp which fights are worth taking and when it's best to regroup then try Darkies. Guard is very much needed for their cocky play-style, but since it's a Strength skill you'll need to get lucky and roll Doubles!//
 
 ''@@Mutant Teams@@'' – The infected teams are able to pick mutations when gaining skills, they are ''slightly harder to master'' but also have the highest potential as they can create very specialized players!
